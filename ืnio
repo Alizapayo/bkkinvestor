@@ -1,0 +1,214 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bangkok investor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+    
+        <div>
+            <nav class="navbar">
+                <div class="company-name">Bangkok investor</div>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-item">Home</a></li>
+                    <li><a href="#" class="nav-item">Project</a></li>
+                </ul>
+            </nav>
+        
+        </div>
+        <div class="blue-padding">
+           <h1>WELCOME TO <span class="blue-text">WEBSITE</span></h1>
+           <p>บริการอื่นๆงานตกแต่งและออกแบบห้องเรียนอย่างมีสไตล์<br>หร้อมให้บริการดูแลอุปกรณ์ภายในระยะประกันหลังการขายแบบทันใน24 ชม.</p>
+           <button class="btn">SEE MORE</button>
+        </div>
+
+<div class="about">
+    <h1>ABOUT AS</h1>
+    <p>บริการอื่นๆงานตกแต่งและออกแบบห้องเรียนอย่างมีสไตล์<br>หร้อมให้บริการดูแลอุปกรณ์ภายในระยะประกันหลังการขายแบบทันใน24 ชม.</p>
+</div>
+
+<div class="container">
+<div class="image-container">
+    <img src="bkkinvestor/digital_library.jpg" alt="Example Image">
+</div>
+<div class="image-container">
+    <img src="bkkinvestor/stem_lab.jpg" alt="Example Image">  
+</div>
+<div class="image-container">
+    <img src="bkkinvestor/gifted_room.jpg" alt="Example Image">  
+</div>
+<div class="image-container">
+    <img src="bkkinvestor/sport.jpg" alt="Example Image">  
+</div>
+</div>
+
+<div class="container">
+    <div class="left">
+        <div class="w3-content w3-section" style="max-width:700px; display: flex; align-items: center;">
+            <img  id="slide-img" class="mySlides w3-animate-fading" src="bkkinvestor/02.1.jpg" style="width:50%; margin-right: 50px;">
+            <div id="slide-text" class="text-container">
+                <h4>โครงการเครื่องเช่าคอมพิวเตอร์พร้อมอุปกรณ์ทางเทคโนโลยีต่างๆ</h4>
+                <p>บริการให้เช่าเครื่องคอมพิวเตอร์และอุปกรณ์ไอทีทางการศึกษา อุปกรณ์ทุกชิ้นรับประกันพร้อมเปลี่ยนและซ่อมให้ภายในระยะเวลาประกัน</p>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <h6><b>ซอฟต์แวร์ทางการศึกษาออนไลน์ได้ลิขสิทธ์การเปิดใช้งานจากบริษัท 168 Education Co., Ltd.</h6></b>
+        <div class="inner-right">
+            <img src="bkkinvestor/03-1.jpg" alt="รูปภาพขนาดเล็ก" style= "margin-right: 18px;">
+            <p>SMART CLASSROOM VISUAL PLANNING FOR TEACHER.</p>
+        </div>
+        <div class="inner-right">
+            <img src="bkkinvestor/03-2.jpg" alt="รูปภาพขนาดเล็ก" style="margin-right: 18px;">
+            <p>VISUAL PLANNING วิชาคอมพิวเตอร์</p>
+        </div>
+        <div class="inner-right">
+            <img src="bkkinvestor/03-3.jpg" alt="รูปภาพขนาดเล็ก" style="margin-right: 18px;">
+            <p>Gifted <br>ซอฟแวร์สำหรับโครงการจัดทำห้องเรียน สำหรับนักเรียนที่มีความสารถพิเศษทางด้านวิทย์-คณิต</p>
+            
+        </div>
+        
+    </div>
+    
+</div>
+
+<div class="card-container">
+<div class="card-wrapper" id="cardWrapper">
+    <div class="cards">
+        <div class="card">
+            <img src="bkkinvestor/04-1.jpg" alt="การ์ดที่ 1">
+            <div class="card-content">
+                <h3>Gifted education</h3>
+                <p>ระบบการเรียนการสอนสำหรับเด็กที่มีความสามารถพิเศษทางด้านวิทยาศาสตร์และคณิตศาสตร์</p>
+            </div>
+        </div>
+    <div class="card">
+        <img src="bkkinvestor/04-2.jpg" alt="รูปภาพการ์ด">
+        <div class="card-content">
+            <h5><b>ปรับปรุงห้องเรียนคอมพิวเตอร์พร้อมอุปกรณ์</b></h5>
+            <p>ปรับปรุงห้องเรียนคอมพิวเตอร์ให้ทันสมัยน่าเรียน พร้อมอุปกรณ์ที่ทันสมัย</p>            
+            <p><a href="#"><b>อ่านเพิ่มเติม</b></a></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="bkkinvestor/04-3.jpg" alt="รูปภาพการ์ด">
+        <div class="card-content">
+            <h5><b>ห้องเรียน STEM LAB</b></h5>
+            <p>การเรียนรู้วิชาวิทยาศาสตร์ (Science) เทคโนโลยี (Technology) วิศวกรรมศาสตร์ (Engineering) และ คณิตศาสตร์ (Mathematics) </p>            
+            <p><a href="#"><b>อ่านเพิ่มเติม</b></a></p>
+        </div>
+    </div> 
+</div>
+</div>   
+<div class="controls">
+    <img src="bkkinvestor/arrow-right.png" style="width: 40px" id="prevBtn"></button>
+    <img src="bkkinvestor/arrow-left.png" style="width: 40px" id="nextBtn"></button>
+</div></div>
+
+
+
+
+  <script>
+    // JavaScript สำหรับเปลี่ยนรูปภาพและข้อความ
+    var slideIndex = 0;
+    var slides = [
+        {
+            image: "bkkinvestor/02-1.jpg",
+            text: "โครงการเครื่องเช่าคอมพิวเตอร์พร้อมอุปกรณ์ทางเทคโนโลยีต่างๆ",
+            description: "บริการให้เช่าเครื่องคอมพิวเตอร์และอุปกรณ์ไอทีทางการศึกษา อุปกรณ์ทุกชิ้นรับประกันพร้อมเปลี่ยนและซ่อมให้ภายในระยะเวลาที่ประกัน"
+        },
+        {
+            image: "bkkinvestor/02-2.jpg",
+            text: "โครงการจัดทำห้องเรียนทางวิทยาศาสตร์",
+            description: "1.ห้องเรียนสำหรับนักเรียนที่มีความสามารถทางด้านคณิตศาสตร์และวิทยาศาสตร์ \n 2.ห้องทดลองทางวิทยาศาสตร์ \n 3.ห้องLab 3D"
+        },
+        {
+            image: "bkkinvestor/02-3.jpg",
+            text: "โครงการจัดทำห้องสื่อต่างๆ",
+            description: "1.งานออกแบบและตกแต่งปรับปรุงห้องสมุดเพื่อการสืบค้น \n 2.ปรับปรุงห้องเรียนปกติให้เป็นห้องเรียนอาเซียน \n 3.ห้องเรียนรู้สื่อ ห้องมัลติมิเดีย"
+        },
+        {
+            image: "bkkinvestor/02-4.jpg",
+            text: "โครงการจัดซื้ออุปกรณ์ทางเทคโนโลยี",
+            description: "จอ LED Display สำหรับโฆษณาประชาสัมพันธ์ข่าวสาร"
+        }
+    ];
+
+    function showSlides() {
+        var slide = slides[slideIndex];
+        document.querySelector(".mySlides").src = slide.image;
+        document.querySelector(".text-container h4").innerText = slide.text;
+        document.querySelector(".text-container p").innerText = slide.description;
+
+        slideIndex++;
+        if (slideIndex >= slides.length) slideIndex = 0;
+
+        setTimeout(showSlides, 7000); // เปลี่ยนทุก 3 วินาที
+    }
+
+    showSlides(); // เริ่มการสไลด์
+    //ปุ่มกดการ์ด
+    const cardsData = [
+        { img: "bkkinvestor/04-1.jpg", title: "Gifted education", description: "ระบบการเรียนการสอนสำหรับเด็กที่มีความสามารถพิเศษทางด้านวิทยาศาสตร์และคณิตศาสตร์", link: "#" },
+        { img: "bkkinvestor/04-2.jpg", title: "ปรับปรุงห้องเรียนคอมพิวเตอร์พร้อมอุปกรณ์", description: "ปรับปรุงห้องเรียนคอมพิวเตอร์ให้ทันสมัยน่าเรียน พร้อมอุปกรณ์ที่ทันสมัย", link: "#" },
+        { img: "bkkinvestor/04-3.jpg", title: "ห้องเรียน STEM LAB", description: "การเรียนรู้วิชาวิทยาศาสตร์ (Science) เทคโนโลยี (Technology) วิศวกรรมศาสตร์ (Engineering) และ คณิตศาสตร์ (Mathematics)", link: "#" },
+        { img: "bkkinvestor/04-4.jpg", title: "ลานกีฬาหลังคาโดม", description: "เพื่อสร้างหลังคาคลุมลานเอนกประสงค์ให้มีความพร้อมในการใช้จัดกิจกรรมการเรียนการสอน และกิจกรรมต่างๆ ของโรงเรียนมีความสมบูรณ์และมีประสิทธิภาพยิ่งขึ้น", link: "#" },
+        { img: "bkkinvestor/04-5.png", title: "ห้องเรียน STEM ROBOTICS", description: "หลักสูตร STEM มาผสมผสานกับ หุ่นยนต์ ซึ่งจะทำหน้าที่เป็นสื่อการสอน ได้เรียนตั้งแต่การประกอบและการออกแบบหุ่น การเขียนโปรแกรมสั่งการ...", link: "#" },
+        { img: "bkkinvestor/04-6.jpg", title: "ศูนย์พัฒนาวิชาการติวเตอร์", description: "เนื่องจากในสภาพปัจจุบันนักเรียนจะต้องมึความรู้เพื่อเตรียมความพร้อมในการเรียนระดับสูงขึ้นเพราะฉะนั้นการเรียนใช้เวลาเรียนใน...", link: "#" }
+    ];
+
+    let currentIndex = 0;
+
+    const cardWrapper = document.getElementById('cardWrapper');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    function displayCards() {
+        cardWrapper.innerHTML = '';
+        const visibleCards = cardsData.slice(currentIndex, currentIndex + 3);
+        visibleCards.forEach(card => {
+            const cardElement = document.createElement('div');
+            cardElement.classList.add('card');
+            cardElement.innerHTML = `
+                <img src="${card.img}" alt="${card.title}">
+                <div class="card-content">
+                    <h5>${card.title}</h5>
+                    <p>${card.description}</p>
+                    <a href="${card.link}">อ่านเพิ่มเติม</a>
+                </div>
+            `;
+            cardWrapper.appendChild(cardElement);
+        });
+
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex + 3 >= cardsData.length;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex -= 3;
+            displayCards();
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex + 3 < cardsData.length) {
+            currentIndex += 3;
+            displayCards();
+        }
+    });
+
+    // Initial display of cards
+    displayCards();
+</script>
+</body>
+</html>
+

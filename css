@@ -1,0 +1,699 @@
+:root {
+    --navbar_background: #ffffff;
+    --font:'Trebuchet MS', sans-serif;
+    --head_font:'Quicksand', sans-serif;
+    --sarabun_font:'Sarabun', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--navbar_background);
+    margin-top: 20px;
+}
+
+.company-name {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Style for the nav links container */
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Navbar adjustment for tablet and smaller devices */
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .company-name {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Navbar adjustment for mobile devices */
+    .navbar {
+        padding: 15px;
+    }
+
+    .company-name {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-links li {
+        margin: 8px 0;
+    }
+}
+/* Style for each nav item */
+.nav-item {
+    margin: 0 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease
+}
+
+/* Hover effect for nav items */
+.nav-item:hover {
+    color: Deepskyblue;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color:  rgb(30, 181, 236);
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1eeee8e;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Arrow for dropdown */
+.arrow {
+    margin-left: 5px;
+}
+
+/* Styling for dropdown toggle */
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.blue-padding {
+    padding: 20px;
+    background-color: rgb(218, 240, 248);
+    /* สีฟ้าพื้นหลัง */
+    color: black;
+    /* สีข้อความ (ถ้าต้องการ) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px; 
+
+}
+
+.blue-padding h1 {
+    margin-top: 40px;
+    font-family: var(--head_font);
+    color: #000000;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.blue-padding h2  {
+    margin-top: 40px;
+    font-family: var(--head_font);
+    color: #000000;
+    font-weight: bold;
+    font-size: 44px;
+}
+.blue-padding h3  {
+    margin-top: 40px;
+    font-family: var(--sarabun_font);
+    color: #000000;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.blue-text {
+    font-family: var(--head_font);
+    color: #14B4F9;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.btn {
+    background-color: #12A4E2;
+    /* สีพื้นหลังของปุ่ม */
+    color: white;
+    /* สีของตัวอักษร */
+    padding: 10px 25px;
+    /* ขนาดของปุ่ม (ระยะห่างภายในปุ่ม) */
+    text-align: center;
+    /* การจัดตำแหน่งข้อความให้อยู่กลาง */
+    text-decoration: none;
+    /* ลบเส้นใต้หากมี */
+    display: inline-block;
+    /* ปุ่มจะแสดงเป็นบล็อกแบบอินไลน์ */
+    font-size: 16px;
+    /* ขนาดของตัวอักษร */
+    border-radius: 25px;
+    /* ทำให้มุมปุ่มโค้ง */
+    border: none;
+    /* ลบเส้นขอบ */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นแบบมือเมื่อชี้ที่ปุ่ม */
+    transition: background-color 0.3s ease;
+    /* การเปลี่ยนสีพื้นหลังเมื่อเอาเมาส์ไปทับ */
+    margin-top: 40px;
+}
+
+/* การเปลี่ยนสีพื้นหลังเมื่อเมาส์ไปทับ */
+.btn:hover {
+    background-color: white;
+    /* สีพื้นหลังที่เปลี่ยนเมื่อเมาส์ไปทับ */
+    color: #12A4E2;
+}
+
+/*หัวเรื่อง*/
+.header a {
+    text-decoration: none; /* ยกเลิกเส้นใต้ */
+}
+
+.header a:hover{
+    color:#14B4F9;
+}
+
+/*เกี่ยวกับ*/
+.about {
+    text-align: center;
+    color: #14B4F9;
+    margin-top: 60px;
+    font-family: var(--head_font);
+    /* เพิ่มระยะห่างจากด้านบน */
+}
+.about h1{
+    font-family: var(--head_font);
+    font-weight: bold;
+    /* เพิ่มระยะห่างจากด้านบน */
+}
+
+.about p {
+    color: black;
+
+}
+
+.container-img {
+    display: flex;
+    /* ให้อยู่บรรทัดเดียวกัน */
+    justify-content: center;
+    /* ให้มีระยะห่างระหว่างแต่ละรูป */
+    gap: 30px;
+    /* กำหนดระยะห่างระหว่างรูป */
+    margin-top: 60px;
+    flex-wrap: wrap; 
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 20px;
+    /* ขอบมนสำหรับกรอบ */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    /* ขอบมนสำหรับรูปภาพ */
+}
+
+
+/* ตัวหลักของการจัด layout */
+.container {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+/* ฝั่งซ้าย */
+.left {
+    flex: 4;
+    /* ใช้พื้นที่ที่เหลือทั้งหมด */
+    padding: 20px;
+    background-color: rgb(218, 240, 248);
+    /* สีฟ้าพื้นหลัง */
+    border-radius: 10px;
+}
+
+.w3-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.mySlides {
+    width: 50%;
+    /* รูปภาพจะอยู่ครึ่งหนึ่งของคอนเทนเนอร์ */
+    margin-right: 500px;
+    /* ระยะห่างระหว่างรูปและข้อความ */
+    margin-top: 70px;
+}
+
+.text-container {
+    width: 50%;
+    /* ข้อความจะครอบคลุมอีกครึ่งหนึ่ง */
+}
+
+.text-container h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-container p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+
+/* ฝั่งขวา */
+.right {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(218, 240, 248);
+    /* สีฟ้าพื้นหลัง */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* เรียงกันในแนวตั้ง */
+}
+
+.right h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Padding ภายในของฝั่งขวา */
+.inner-right {
+    padding: 10px;
+    /* width: 370;
+    height: 120;*/
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: row;
+    /* ให้มีการเรียงลงมา */
+    align-items: center;
+    /* จัดแนวให้รูปและข้อความอยู่ตรงกลาง */
+
+}
+@media screen and (max-width: 480px) {
+    .container {
+        display: flex;
+        flex-direction: column; /* จัดเรียงให้อยู่คนละบรรทัด */
+    }
+
+    .left {
+        width: 100%; /* ให้แสดงเต็มความกว้าง */
+    }
+
+    .right {
+        width: 100%; /* ให้ลงมาข้างล่างและเต็มจอ */
+        margin-top: 20px; /* เพิ่มระยะห่างจากด้านบน */
+    }
+}
+
+
+/* รูปภาพขนาดเล็ก */
+.inner-right img {
+    max-width: 114px;
+    height: 80px;
+    /*object-fit: cover; */
+    /* ครอบรูปให้พอดีกับพื้นที่ */
+    /*border-radius: 50%;*/
+}
+
+/* การจัดการข้อความ */
+.right h5 {
+    color: #000000;
+}
+
+.right p {
+    font-size: 14px;
+    color: #666;
+    
+}
+
+.right a {
+    text-decoration: none;    
+}
+.right a:hover {
+    color:#14B4F9;
+}
+.project h2 {
+    font-family: var(--head_font);
+    text-align: center;
+    font-weight: bold;
+    color:#14B4F9;
+    font-size: 40px;
+}
+
+/*ช่องว่างการ์ด*/
+.margin {
+    margin-top: 10;
+}
+
+.card-container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    gap: 30px;
+    /* ระยะห่างระหว่างการ์ด */
+}
+
+.card {
+    width: 277px;
+    /* กำหนดขนาดของการ์ด width: 25%; */
+    height: 342px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    /*padding: 20px;*/
+    transition: transform 0.5s ease;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* justify-content: space-between;*/
+}
+
+.card img {
+    width: 100%;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 17px;
+    flex-grow: 1; /* ให้ส่วนของเนื้อหาขยายเต็มที่ */
+}
+
+.text-limit {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* จำกัดที่ 4 บรรทัด */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* แสดง '...' เมื่อข้อความเกิน */
+  }
+ 
+.read-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 10px; /* เพิ่มระยะห่างจากขอบ */
+     /* ทำให้ข้อความ "อ่านเพิ่มเติม" อยู่ที่ด้านล่างสุด */
+     margin-bottom: 10px;
+  }
+
+.card-content h5 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: var(--sarabun_font);
+    font-weight: bold;
+}
+
+.card-content p {
+    margin: 10px 0;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: #17b3fc;
+    /*font-weight: bold;*/
+}
+
+.card-content a:hover {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+.footer {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: rgb(47, 188, 240);
+    /* สีฟ้าพื้นหลัง */
+    color: rgb(255, 255, 255);
+    /* สีข้อความ (ถ้าต้องการ) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+.footer h4{
+    font-family: 'Sarabun', sans-serif  
+}
+
+
+/******** index*********/
+.index {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
+/*************details****************/
+.details {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.details img{
+    /*width: 50%;*/
+    height: auto;
+    align-items: center;
+    max-width: 100%; /* ปรับให้รูปภาพยืดหยุ่นตามขนาดหน้าจอ */
+}
+
+.details p{
+    font-family: var(--font);
+    margin-right: 10px;
+    text-align: center;
+    padding: 30px;
+    max-width: 800px;
+}
+@media (max-width: 768px) {
+    .details {
+        display: block;
+    }
+
+    .details img {
+        width: 100%; /* ให้รูปภาพเต็มความกว้างเมื่อหน้าจอเล็ก */
+        margin-bottom: 10px;
+    }
+
+    /* ปรับการจัดเรียงรูปภาพให้เป็นแนวตั้ง */
+    .details div {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .details img {
+        width: 90%; /* รูปภาพจะยืดให้เต็มพื้นที่ที่ 90% */
+        margin-bottom: 15px;
+    }
+}
+
+
+.digital{
+    display: flex;
+            justify-content: center;  /* จัดให้อยู่กึ่งกลางแนวนอน */
+            align-items: center;  /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+            margin: 0;
+}
+.digital p {
+    text-align: left; /* จัดข้อความชิดซ้าย */
+}
+
+/*******การ์ดของซอฟต์แวร์ทางการศึกษา การ์ดมีลิงค์********/
+
+.card-links {
+    padding: 17px;
+    flex-grow: 1; /* ให้ส่วนของเนื้อหาขยายเต็มที่ */
+}
+
+
+.card-links p {
+    margin: 10px 0;
+}
+
+.card-links a {
+    text-decoration: none;
+    color: #000000;
+    /*font-weight: bold;*/
+}
+
+.card-links a:hover {
+    color: #777777;
+}
+
+.card-button {
+    padding: 17px;
+    flex-grow: 1; /* ให้ส่วนของเนื้อหาขยายเต็มที่ */
+}
+.card-button .btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.card-button .btn:hover {
+    background-color: #6baff8;
+}
+
+/*****การ์ดหน้าhome*******/
+.card-project {
+    width: 25%;
+    /* กำหนดขนาดของการ์ด width: 25%; */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    /*padding: 20px;*/
+    transition: transform 0.5s ease;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* justify-content: space-between;*/
+}
+
+.card-project img {
+    width: 100%; /* ปรับให้เต็มขนาดของการ์ด */
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+.home-card h5{
+    text-align: center;
+    font-family: var(--sarabun_font);
+    font-weight: bold;
+}
+
+.home-card a{
+    text-decoration: none;
+
+}
+.home-card a:hover{
+    color:#17b3fc
+}
+
+.controls {
+    text-align: center;
+    margin-top: 50px;
+    cursor: pointer;
+    line-height: 1.5;
+}
+.controls img {
+    margin: 10px;
+} 
+
+
+@media (max-width: 768px) {
+    .card-project {
+        width: 100%; /* 1 การ์ดต่อแถวสำหรับมือถือ */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-project img {
+        width: 100%; /* ปรับให้รูปภาพเต็มขนาดการ์ด */
+        height: auto;
+    }
+
+    .home-card h5 {
+        font-size: 16px; /* ขนาดฟอนต์ลดลงบนมือถือ */
+    }
+}
